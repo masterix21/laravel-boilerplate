@@ -37,4 +37,3 @@ trait HasAddresses
         return $this->addresses()->where('is_shipping', true);
     }
 }
-

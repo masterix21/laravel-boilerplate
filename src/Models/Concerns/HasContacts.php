@@ -1,7 +1,6 @@
 <?php
 namespace Masterix21\LaravelBoilerplate\Models\Concerns;
 
-use Masterix21\LaravelBoilerplate\Models\Address;
 use Masterix21\LaravelBoilerplate\Models\Contact;
 
 trait HasContacts
@@ -36,4 +35,3 @@ trait HasContacts
         return $this->contacts()->where('is_shipping', true);
     }
 }
-

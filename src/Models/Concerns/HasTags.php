@@ -1,8 +1,8 @@
 <?php
 namespace Masterix21\LaravelBoilerplate\Models\Concerns;
 
-use Masterix21\LaravelBoilerplate\Models\Tag;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Masterix21\LaravelBoilerplate\Models\Tag;
 
 trait HasTags
 {

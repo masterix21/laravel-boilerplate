@@ -139,4 +139,3 @@ class User extends Authenticatable implements MustVerifyEmail, HasMedia
         return $this->hasRole('cowboy');
     }
 }
-
