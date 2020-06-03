@@ -1,9 +1,8 @@
 <?php
+namespace Masterix21\LaravelBoilerplate\Tests;
 
-namespace Spatie\Skeleton\Tests;
-
+use Masterix21\LaravelBoilerplate\BoilerplateServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Skeleton\SkeletonServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -17,7 +16,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            BoilerplateServiceProvider::class,
         ];
     }
 
@@ -31,7 +30,7 @@ class TestCase extends Orchestra
         ]);
 
         /*
-        include_once __DIR__.'/../database/migrations/create_skeleton_tables.php.stub';
+        include_once __DIR__.'/../database/migrations/alter_table_users.php.stub';
         (new CreatePackageTables())->up();
         */
     }

@@ -1,22 +1,29 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "masterix21/laravel-boilerplate",
+    "description": "My boilerplate to any new Laravel Application",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "masterix21",
+        "laravel",
+        "boilerplate",
+        "models",
+        "users",
+        "addresses",
+        "laravel-boilerplate"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/masterix21/laravel-boilerplate",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Luca Longo",
+            "email": "l.longo@ambita.it",
+            "homepage": "https://www.ambita.it",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "spatie/laravel-medialibrary": "^8.2",
+        "spatie/laravel-permission": "^3.13"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
@@ -27,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Masterix21\\LaravelBoilerplate\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Masterix21\\LaravelBoilerplate\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Masterix21\\LaravelBoilerplate\\BoilerplateServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Skeleton": "Masterix21\\LaravelBoilerplate\\BoilerplateFacade"
             }
         }
     },

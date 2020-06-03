@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Skeleton;
+namespace Masterix21\Skeleton;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Spatie\Skeleton\Skeleton
+ * @see \Masterix21\Skeleton\Boilerplate
  */
-class SkeletonFacade extends Facade
+class BoilerplateFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
